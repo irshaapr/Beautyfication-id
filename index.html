@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- !! Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Send+Flowers&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="./assets/icons/WhatsApp Image 2024-07-01 at 09.27.01.jpeg"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <title>Beautyfication.id | Fashion Collection Family</title>
+  </head>
+
+  <body>
+    <header class="absolute w-full z-10 drop-shadow-2xl">
+      <nav class="bg-white bg-opacity-25 w-full flex items-center h-28">
+        <div
+          class="container mx-auto px-3 flex w-full items-center justify-between"
+        >
+          <a
+            href="#"
+            class="nav-brand text-white ribeye-marrow-regular text-center md:text-left text-2xl"
+            >BEAUTYFICATION.id</a
+          >
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <!-- <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg> -->
+
+              <i class="ai-text-align-justified text-3xl"></i>
+            </button>
+          </div>
+          <ul id="menu" class="hidden md:flex md:items-center gap-12">
+            <li>
+              <a href="index.html" class="nav-item text-white cursor-pointer"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#products" class="nav-item text-white cursor-pointer"
+                >Our Products</a
+              >
+            </li>
+            <li>
+              <a href="#aboutUs" class="nav-item text-white cursor-pointer"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <ul
+        id="mobile-menu"
+        class="hidden md:hidden flex flex-col items-center bg-white bg-opacity-25 w-full mt-4 py-2 space-y-2"
+      >
+        <li>
+          <a href="index.html" class="nav-item text-white cursor-pointer"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#products" class="nav-item text-white cursor-pointer"
+            >Product</a
+          >
+        </li>
+        <li>
+          <a href="#about" class="nav-item text-white cursor-pointer"
+            >About Us</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="absolute bg-black w-full h-full bg-opacity-25"></div>
+      <div
+        class="w-72 h-72 rounded-full bg-[#D9D9D9] absolute -start-28 -top-12"
+      ></div>
+      <div
+        class="w-72 h-72 rounded-full bg-[#F5B700] absolute end-0 -top-32"
+      ></div>
+      <div
+        class="w-52 h-52 rounded-full bg-[#D9D9D9] absolute end-0 top-20"
+      ></div>
+      <div class="index">
+        <div
+          class="container flex flex-wrap justify-center items-center mx-auto h-screen relative"
+        >
+          <div
+            class="carousel-part w-full md:w-1/2 h-screen hidden md:flex flex-col justify-center items-center drop-shadow-2xl"
+          >
+            <div
+              class="carousel w-96 h-96 border-4 rounded-xl relative overflow-hidden"
+            >
+              <div
+                class="carousel-inner flex absolute w-full h-full transition-transform duration-300"
+              >
+                <div class="carousel-item flex-shrink-0 w-full h-full">
+                  <img
+                    src="./assets/img/Carousel 1.jpg"
+                    alt=".png"
+                    class="w-full h-full"
+                  />
+                </div>
+                <div class="carousel-item flex-shrink-0 w-full h-full">
+                  <img
+                    src="./assets/img/Carousel 2.jpg"
+                    alt=".png"
+                    class="w-full h-full"
+                  />
+                </div>
+                <div class="carousel-item flex-shrink-0 w-full h-full">
+                  <img
+                    src="./assets/img/Carousel 3.jpg"
+                    alt=".png"
+                    class="w-full h-full"
+                  />
+                </div>
+              </div>
+
+              <i
+                id="prevBtn"
+                class="ai-chevron-left absolute cursor-pointer top-1/2 left-0 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2"
+              ></i>
+
+              <i
+                id="nextBtn"
+                class="ai-chevron-right absolute cursor-pointer top-1/2 right-0 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2"
+              ></i>
+            </div>
+            <div class="flex gap-5 mt-4">
+              <div class="carousel-dot w-4 h-4 rounded-lg bg-orange-400"></div>
+              <div class="carousel-dot w-4 h-4 rounded-lg bg-slate-50"></div>
+              <div class="carousel-dot w-4 h-4 rounded-lg bg-slate-50"></div>
+            </div>
+          </div>
+          <div
+            class="index-part w-full md:w-1/2 h-screen text-white drop-shadow-2xl flex flex-col justify-center items-center md:items-start px-4 md:px-12 text-center md:text-left"
+          >
+            <p class="send-flowers-regular text-3xl mb-3 drop-shadow-2xl">
+              Open Happiness
+            </p>
+            <h1
+              class="roboto-bold text-5xl w-full md:w-3/4 mb-3 drop-shadow-2xl"
+            >
+              Fashion Collection Family
+            </h1>
+            <p class="roboto-reqular text-xl w-full md:w-3/4 drop-shadow-2xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              voluptatibus ex aperiam error excepturi, dolor incidunt pariatur
+              hic sed rem blanditiis officiis temporibus cumque laudantium vitae
+              nam quos iure! Earum?
+            </p>
+            <a href="https://shopee.co.id/beautyfication.id">
+              <button
+                class="btns-toko flex items-center justify-evenly bg-[#ECAA2A] rounded-lg mt-3 drop-shadow-2xl hover:bg-orange-700"
+              >
+                <i class="ai-cart text-2xl"></i>
+                <span class="text-lg">Kunjungi Toko</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro h-screen bg-[#676767] relative">
+        <div
+          class="container mx-auto px-3 pb-48 w-full h-full flex flex-col justify-center items-center relative"
+        >
+          <h1
+            class="text-slate-100 text-4xl ribeye-marrow-regular text-center md:text-left"
+          >
+            <span>-</span>
+            BEAUTYFICATION.id
+            <span>-</span>
+          </h1>
+          <p class="w-full md:w-1/2 text-2xl text-slate-100 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            deleniti et quidem nesciunt blanditiis ex, inventore sint quam nemo!
+            Dicta explicabo laboriosam facilis nisi aspernatur vero esse sed
+            tempora corrupti.
+          </p>
+        </div>
+
+        <!-- <div class="img relative w-full h-screen">
+        <img src="./assets/img/Particle.svg" alt="" class="absolute">
+        <img src="./assets/img/Particle (1).svg" alt="" class="absolute right-24">
+      </div> -->
+
+        <div class="waves">
+          <img src="./assets/img/wave.svg" alt="" class="absolute bottom-0" />
+        </div>
+      </div>
+
+      <!-- ! (START) OurProducts -->
+      <div class="ourProducts w-full h-max text-center relative" id="products">
+        <h1 class="roboto-bold text-4xl text-black mt-5">- OUR PRODUCTS -</h1>
+        <img
+          src="./assets/icons/Dashed Line.png"
+          alt="dashedline.svg"
+          class="inline-block my-8"
+        />
+      </div>
+      <div
+        class="container mx-auto px-3 grid grid-cols-1 gap-10 auto-cols-auto auto-rows-auto md:grid-cols-2 lg:grid-cols-3 h-max mb-52 drop-shadow-sm"
+      >
+        <div
+          class="w-80 h-96 mx-auto grid-item rounded-2xl relative drop-shadow-xl"
+        >
+          <div class="w-full h-max relative mt-8">
+            <div
+              class="photo-1 flex justify-center items-center gap-y-2 relative flex-col"
+            >
+              <img
+                src="./assets/icons/Rate.png"
+                alt="rate.png"
+                class="absolute w-1/2 top-2/3 left-2/4"
+              />
+              <img
+                src="./assets/img/PHOTO 1.jpeg"
+                alt="baju atasan anak.png"
+                class="w-2/3 rounded-xl"
+              />
+              <p class="text-2xl roboto-bold">Baju Kaos Anak</p>
+            </div>
+
+            <div
+              class="w-72 h-20 bg-[#F5DFBB] relative bottom-0 rounded-xl mx-auto flex justify-between px-4 items-center"
+            >
+              <p class="roboto-bold text-3xl">Rp. 56.000</p>
+              <a
+                href="https://shopee.co.id/Baju-Kaos-Atasan-Anak-Perempuan-Kekinian-LENGAN-PANJANG-Variasi-Balon-Usia-5-14-Tahun-Katun-Tebal-i.127011860.22668096350?xptdk=efc81ab3-0aca-473c-ac0f-019969fc0838"
+              >
+                <button
+                  class="cart w-10 h-1/2 px-2 py-1 bg-[#ECAA2A] rounded-full hover:bg-[#DE9505]"
+                >
+                  <i class="ai ai-cart text-white text-2xl"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-80 h-96 mx-auto grid-item rounded-2xl relative drop-shadow-xl"
+        >
+          <div class="w-full h-max relative mt-8">
+            <div
+              class="photo-1 flex justify-center items-center gap-y-2 relative flex-col"
+            >
+              <img
+                src="./assets/icons/Rate.png"
+                alt="rate.png"
+                class="absolute w-1/2 top-2/3 left-2/4"
+              />
+              <img
+                src="./assets/img/PHOTO 2.jpeg"
+                alt="baju atasan anak.png"
+                class="w-2/3 rounded-xl"
+              />
+              <p class="text-2xl roboto-bold">Baju Couple</p>
+            </div>
+
+            <div
+              class="w-72 h-20 bg-[#F5DFBB] relative bottom-0 rounded-xl mx-auto flex justify-between px-4 items-center"
+            >
+              <p class="roboto-bold text-3xl">Rp. 82.000</p>
+              <a
+                href="https://shopee.co.id/Kaos-Couple-Keluarga-Family-set-Kaos-Keluarga-Senada-Series-Trendy-Baju-Atasan-Polos-Oversize-Sarimbit-Cemara-Family-Ayah-Ibu-dan-Anak-i.127011860.22284661115?sp_atk=3f99e9a5-49a0-4fa4-9760-f08b6fc3742a&xptdk=3f99e9a5-49a0-4fa4-9760-f08b6fc3742a"
+              >
+                <button
+                  class="cart w-10 h-1/2 px-2 py-1 bg-[#ECAA2A] rounded-full hover:bg-[#DE9505]"
+                >
+                  <i class="ai ai-cart text-white text-2xl"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-80 h-96 mx-auto grid-item rounded-2xl relative drop-shadow-xl"
+        >
+          <div class="w-full h-max relative mt-8">
+            <div
+              class="photo-1 flex justify-center items-center gap-y-2 relative flex-col"
+            >
+              <img
+                src="./assets/icons/Rate.png"
+                alt="rate.png"
+                class="absolute w-1/2 top-2/3 left-2/4"
+              />
+              <img
+                src="./assets/img/PHOTO 3.jpeg"
+                alt="baju atasan anak.png"
+                class="w-2/3 rounded-xl"
+              />
+              <p class="text-2xl roboto-bold">Gamis Anak</p>
+            </div>
+
+            <div
+              class="w-72 h-20 bg-[#F5DFBB] relative bottom-0 rounded-xl mx-auto flex justify-between px-4 items-center"
+            >
+              <p class="roboto-bold text-3xl">Rp. 112.000</p>
+              <a
+                href="https://shopee.co.id/Gamis-Anak-Perempuan-bahan-kaos-Katun-Premium-5-14-Tahun-Longdress-Gamis-Anak-Perempuan-Kaos-Muslimah-Keren-Dress-Anak-Tanggung-Kekinian-Usia-4-Sampai-14-Tahun-i.127011860.25063876930?sp_atk=cbe7e4db-5432-4109-affa-3af53f3073b1&xptdk=cbe7e4db-5432-4109-affa-3af53f3073b1"
+              >
+                <button
+                  class="cart w-10 h-1/2 px-2 py-1 bg-[#ECAA2A] rounded-full hover:bg-[#DE9505]"
+                >
+                  <i class="ai ai-cart text-white text-2xl"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ! (END) of Our Products -->
+
+      <!-- ! (START) of Nikmati Penawaran  -->
+      <div class="mx-auto w-full relative my-10">
+        <div
+          class="flex flex-col justify-evenly items-center h-max relative lg:flex-row"
+        >
+          <div class="w-1/2 flex justify-center">
+            <img
+              src="./assets/img/Fashion.jpg"
+              alt="fashion.jpg"
+              class="w-full rounded-2xl md:w-1/2"
+            />
+          </div>
+
+          <div
+            class="w-full flex md:justify-center md:w-1/2 justify-center items-center relative"
+          >
+            <img
+              src="./assets/icons/idk.png"
+              alt="idk.svg"
+              class="absolute end-36 top-6 w-20"
+            />
+            <h1
+              class="roboto-bold text-4xl text-white lg:w-3/4 text-center lg:text-left py-12 w-3/4"
+            >
+              Nikmati Penawaran Menarik Diskon Dari Kami
+            </h1>
+          </div>
+        </div>
+        <div
+          class="bg-[#676767] absolute w-full h-4/5 top-1/4 -z-20 md:w-full lg:h-1/2"
+        ></div>
+      </div>
+
+      <!-- ! (START) of TESTIMONI -->
+      <div class="testimoni container mx-auto px-3 w-full h-max">
+        <h1 class="text-4xl roboto-bold text-center border-b-2 pb-5">
+          Testimoni
+        </h1>
+
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 auto-cols-auto auto-rows-auto my-24 gap-5 w-full h-max"
+        >
+          <!-- ? Grid -->
+          <div class="grid-item border-4 rounded-2xl h-max px-8">
+            <div
+              class="flex flex-col justify-center items-center h-full w-full lg:flex-row py-10"
+            >
+              <div
+                class="w-full lg:w-1/2 flex justify-evenly h-full items-center"
+              >
+                <img
+                  src="./assets/img/user.png"
+                  class="photo-tester1"
+                  alt="user.png"
+                />
+                <!-- <p class="">|</p> -->
+              </div>
+              <div
+                class="w-1/2 h-96 flex flex-col items-center justify-center h-max relative pt-10"
+              >
+                <p class="w-full text-center roboto-bold text-4xl lg:text-left">
+                  "
+                </p>
+                <div class="flex w-full justify-between flex-col lg:flex-row">
+                  <p class="text-2xl text-[#FFA500] roboto-bold text-center">
+                    - s*****3
+                  </p>
+
+                  <!-- <div class="flex justify-center">
+                    <img src="./assets/icons/star.svg" alt="star.svg" class="w-5"/>
+                    <img src="./assets/icons/star.svg" alt="star.svg" class="w-5"/>
+                    <img src="./assets/icons/star.svg" alt="star.svg" class="w-5"/>
+                    <img src="./assets/icons/star.svg" alt="star.svg" class="w-5"/>
+                    <img src="./assets/icons/star.svg" alt="star.svg" class="w-5"/>
+                  </div> -->
+                  <p class="text-[#FFDD2D] text-4xl roboto-bold text-center">
+                    ******
+                  </p>
+                </div>
+                <div class="w-full">
+                  <p
+                    class="text-xl roboto-bold text-black lg:text-left text-center"
+                  >
+                    MasyaAllah.. Bagus banget si untuk harga segitu. Bahannya
+                    juga kaos adem dan lembut. Cocok banget dipakai sama
+                    anak-anak. Desainnya bagus dan menarik 😍
+                  </p>
+                </div>
+                <div
+                  class="w-full flex gap-x-2 justify-center lg:justify-between flex-wrap flex-col lg:flex-row"
+                >
+                  <div class="flex gap-x-5 flex-wrap justify-center">
+                    <p class="lg:text-left text-center">--------------</p>
+                    <p class="roboto-mono">2024-07-09</p>
+                  </div>
+
+                  <p class="roboto-bold text-4xl text-center pt-6">"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item border-4 rounded-2xl h-max px-8">
+            <div
+              class="flex flex-col justify-center items-center h-max w-full lg:flex-row py-10"
+            >
+              <div
+                class="w-full lg:w-1/2 flex justify-evenly h-full items-center"
+              >
+                <img
+                  src="./assets/img/belakiran.png"
+                  class="photo-tester1"
+                  alt="selena.png"
+                />
+                <!-- <p class="">|</p> -->
+              </div>
+              <div
+                class="w-1/2 h-max flex flex-col items-center justify-center sm:h-max relative pt-10"
+              >
+                <p class="w-full text-center roboto-bold text-4xl lg:text-left">
+                  "
+                </p>
+                <div class="flex w-full justify-between flex-col lg:flex-row">
+                  <p class="text-2xl text-[#FFA500] roboto-bold text-center">
+                    - bela_kir4n
+                  </p>
+                  <p class="text-[#FFDD2D] text-4xl roboto-bold text-center">
+                    ******
+                  </p>
+                </div>
+                <div class="w-full">
+                  <p
+                    class="text-xl roboto-bold text-black lg:text-left text-center"
+                  >
+                    Anak saya tingginya 116cm .. pas selutut.. Nyaman
+                    dipakainyaa kainnya beneran adem, kualitas sangat bagus
+                  </p>
+                </div>
+                <div
+                  class="w-full flex gap-x-2 justify-center lg:justify-between flex-wrap flex-col lg:flex-row"
+                >
+                  <div class="flex gap-x-5 flex-wrap justify-center">
+                    <p class="lg:text-left text-center">--------------</p>
+                    <p class="roboto-mono">2024-07-02</p>
+                  </div>
+
+                  <p class="roboto-bold text-4xl text-center pt-6">"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item border-4 rounded-2xl h-max px-8">
+            <div
+              class="flex flex-col justify-center items-center h-max w-full lg:flex-row py-10"
+            >
+              <div
+                class="w-full lg:w-1/2 flex justify-evenly h-96 items-center"
+              >
+                <img
+                  src="./assets/img/fitriyuliant.png"
+                  class="photo-tester1"
+                  alt="selena.png"
+                />
+                <!-- <p class="">|</p> -->
+              </div>
+              <div
+                class="w-1/2 h-max flex flex-col items-center justify-center relative pt-10"
+              >
+                <p class="w-full text-center roboto-bold text-4xl lg:text-left">
+                  "
+                </p>
+                <div class="flex w-full justify-between flex-col lg:flex-row">
+                  <p class="text-2xl text-[#FFA500] roboto-bold text-center">
+                    - fitriyuliant140
+                  </p>
+                  <p class="text-[#FFDD2D] text-4xl roboto-bold text-center">
+                    ******
+                  </p>
+                </div>
+                <div class="w-full">
+                  <p
+                    class="text-xl roboto-bold text-black lg:text-left text-center"
+                  >
+                    Bahannya bagus tebal tapi gak yang tebal bgd,nyaman sih..oke
+                    juga
+                  </p>
+                </div>
+                <div
+                  class="w-full flex gap-x-2 justify-center lg:justify-between flex-wrap flex-col lg:flex-row"
+                >
+                  <div class="flex gap-x-5 flex-wrap justify-center">
+                    <p class="lg:text-left text-center">--------------</p>
+                    <p class="roboto-mono">2024-06-24</p>
+                  </div>
+
+                  <p class="roboto-bold text-4xl text-center pt-6">"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item border-4 rounded-2xl h-max px-8">
+            <div
+              class="flex flex-col justify-center items-center h-max w-full lg:flex-row py-10"
+            >
+              <div
+                class="w-full lg:w-1/2 flex justify-evenly h-full items-center"
+              >
+                <img
+                  src="./assets/img/user.png"
+                  class="photo-tester1"
+                  alt="selena.png"
+                />
+                <!-- <p class="">|</p> -->
+              </div>
+              <div
+                class="w-1/2 h-max flex flex-col items-center justify-center relative pt-10"
+              >
+                <p class="w-full text-center roboto-bold text-4xl lg:text-left">
+                  "
+                </p>
+                <div class="flex w-full justify-between flex-col lg:flex-row">
+                  <p class="text-2xl text-[#FFA500] roboto-bold text-center">
+                    - desitrynti
+                  </p>
+                  <p class="text-[#FFDD2D] text-4xl roboto-bold text-center">
+                    ******
+                  </p>
+                </div>
+                <div class="w-full">
+                  <p
+                    class="text-xl roboto-bold text-black lg:text-left text-center"
+                  >
+                    Warnanya baguuus, jahitannya niat rapih, dan double jahit
+                    gitu. Mantep. Harga murceu. Thankyou seller, amanah bgt
+                    jualannya, next bisa order yg baju anak nih buat couplean👍
+                  </p>
+                </div>
+                <div
+                  class="w-full flex gap-x-2 justify-center lg:justify-between flex-wrap flex-col lg:flex-row"
+                >
+                  <div class="flex gap-x-5 flex-wrap justify-center">
+                    <p class="lg:text-left text-center">--------------</p>
+                    <p class="roboto-mono">2024-06-22</p>
+                  </div>
+
+                  <p class="roboto-bold text-4xl text-center pt-6">"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="grid-item">
+          <div class="flex flex-col w-full lg:flex-row">
+            <p class="w-full lg:w-1/2">Col-1</p>
+            <p class="w-full lg:w-1/2">Col-2</p>
+          </div>
+        </div> -->
+        </div>
+      </div>
+      <!-- ! (END) of TESTIMONI -->
+
+      <!-- ! (START) of Borong -->
+      <div
+        class="borong mx-auto px-3 w-full h-screen flex flex-col bg-[#676767] justify-center gap-y-7 items-center"
+      >
+        <div class="flex flex-col justify-evenly">
+          <h1 class="text-4xl text-white roboto-bold">
+            Buruan borong sekarang juga!
+          </h1>
+          <p class="text-xl text-white roboto-thin">Mumpung lagi diskon</p>
+        </div>
+        <a href="https://shopee.co.id/beautyfication.id">
+          <button
+            class="btn-borong flex justify-around items-center w-56 py-2 text-white text-xl border-slate-100 rounded-full hover:bg-[#fff] hover:text-[#676767]"
+          >
+            <p class="roboto-bold">Borong</p>
+            <i class="ai-arrow-right"></i>
+          </button>
+        </a>
+      </div>
+      <!-- ! (END) of Borong -->
+
+      <!-- ! (START) of Footer -->
+      <footer id="aboutUs">
+        <div class="mx-auto p-8 w-full h-max bg-[#323232]">
+          <div class="flex gap-24 items-start flex-col sm:flex-row">
+            <h1 class="ribeye-marrow-regular text-2xl text-white">
+              BEAUTYFICATION.id
+            </h1>
+            <div class="flex flex-col justify-center gap-5">
+              <h1 class="text-sm text-white roboto-bold">Links</h1>
+              <a
+                href="index.html"
+                class="text-sm text-[#676767] hover:text-[#FFA500]"
+                >Home</a
+              >
+              <a
+                href="#products"
+                class="text-sm text-[#676767] hover:text-[#FFA500]"
+                >Our Products</a
+              >
+              <a
+                href="#aboutUs"
+                class="text-sm text-[#676767] hover:text-[#FFA500]"
+                >About Us</a
+              >
+            </div>
+            <div class="flex flex-col justify-center gap-5">
+              <h1 class="text-md text-white roboto-bold">About us</h1>
+
+              <!-- * Shopee -->
+              <div class="flex gap-3 items-center">
+                <img
+                  src="./assets/icons/icons8-shopee.svg"
+                  alt="shopee.svg"
+                  style="color: aliceblue; width: 30px; padding: 0px"
+                />
+                <!-- <i class="ai-shopping-bag text-white text-2xl"></i> -->
+                <p
+                  class="text-sm text-[#676767] hover:text-[#FFA500] roboto-light cursor-pointer roboto-light"
+                >
+                  Shopee
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center gap-5">
+              <h1 class="text-md text-white roboto-bold">Contact Info</h1>
+
+              <div class="flex gap-3 items-center">
+                <i class="ai-map text-white text-2xl"></i>
+                <p class="text-sm text-[#676767]">
+                  Jl. Sekeloa Kidul, Kec. Margahayu, Kabupaten Bandung, Jawa
+                  Barat
+                </p>
+              </div>
+
+              <!-- * Whatsapp -->
+              <div class="flex gap-3 items-center">
+                <i class="ai-whatsapp-fill text-white text-2xl"></i>
+                <p
+                  class="text-sm text-[#676767] hover:text-[#FFA500] roboto-light cursor-pointer roboto-light"
+                >
+                  +62 882-0000-47162
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="text-sm text-[#676767] text-white pt-10">
+            &copy; 2024 Beautyfication.id
+          </p>
+        </div>
+      </footer>
+      <!-- ! (END) of Footer -->
+
+      <!-- <div class="background-filtered container mx-auto">
+      <div class="absolute w-full h-full bg-black bg-opacity-20 -z-1"></div>
+      <div class="background z-0 w-full">
+        <div class="flex flex-wrap justify-between items-center w-full h-full relative">
+          <div class="carousel-part w-1/2">
+            <div class="w-64 h-64 border-4"></div>
+            <div class="w-4 h-4 rounded-lg bg-orange-400"></div>
+          </div>
+
+          <div class="text-index text-white w-1/2">
+            <p>Open Happiness</p>
+            <h1>Kumpulan Baju Kekinian</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatibus ex aperiam error excepturi,
+              dolor incidunt pariatur hic sed rem blanditiis officiis temporibus cumque laudantium vitae nam quos iure!
+              Earum?</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto">
+      <div>test</div>
+    </div> -->
+    </main>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      const carouselInner = document.querySelector(".carousel-inner");
+      const carouselDots = document.querySelectorAll(".carousel-dot");
+      let currentIndex = 0;
+
+      function updateCarousel(index) {
+        const offset = -index * 100;
+        carouselInner.style.transform = `translateX(${offset}%)`;
+        carouselDots.forEach((dot, i) => {
+          dot.classList.toggle("bg-orange-400", i === index);
+          dot.classList.toggle("bg-slate-50", i !== index);
+        });
+      }
+
+      document.getElementById("prevBtn").addEventListener("click", () => {
+        currentIndex =
+          currentIndex > 0 ? currentIndex - 1 : carouselDots.length - 1;
+        updateCarousel(currentIndex);
+      });
+
+      document.getElementById("nextBtn").addEventListener("click", () => {
+        currentIndex =
+          currentIndex < carouselDots.length - 1 ? currentIndex + 1 : 0;
+        updateCarousel(currentIndex);
+      });
+
+      carouselDots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          currentIndex = index;
+          updateCarousel(currentIndex);
+        });
+      });
+
+      updateCarousel(currentIndex);
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

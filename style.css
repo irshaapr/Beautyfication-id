@@ -1,0 +1,207 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.background {
+  background-image: url("assets/img/bgindex.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.index {
+  background-image: url("assets/img/bgindex.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-item {
+  transition: all 0.2s ease-out 0s;
+}
+
+.nav-item:hover {
+  color: orange;
+}
+
+.btns-toko {
+  animation: MorphBtn 2000ms infinite;
+}
+
+.ai-arrow-right {
+  animation: MorphArrow 2000ms infinite;
+}
+
+.cart {
+  transition: all 0.2s ease-out 0s;
+}
+.carousel-part {
+  animation: MorphHighlight 2000ms ease-in;
+}
+
+@keyframes MorphHighlight {
+  from {
+    transform: translateX(-500px);
+    opacity: 0%;
+  }
+  to 20%,
+  40%,
+  60%,
+  80%,
+  100% {
+  }
+  20% {
+    transform: translateX(-400px);
+    opacity: 20%;
+  }
+  40% {
+    transform: translateX(-300px);
+    opacity: 40%;
+  }
+  60% {
+    transform: translateX(-200px);
+    opacity: 60%;
+  }
+  80% {
+    transform: translateX(-100px);
+    opacity: 80%;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+}
+
+@keyframes MorphBtn {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes MorphArrow {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+.btns-toko {
+  width: 200px;
+  height: 50px;
+  transition: all 0.1s ease-out 0s;
+}
+
+.grid-item {
+  border: 2px solid #000;
+}
+
+.photo-tester1 {
+  border-radius: 100%;
+  width: 140px;
+  height: 140px;
+  border: 5px dotted black;
+  padding: 5px;
+}
+
+.btn-borong {
+  transition: all 0.1s ease-out 0s;
+  border: 2px solid white;
+}
+
+.shopee {
+  color: #fff;
+}
+
+/* !! FONTS */
+.send-flowers-regular {
+  font-family: "Send Flowers", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ribeye-marrow-regular {
+  font-family: "Ribeye Marrow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* !! */
